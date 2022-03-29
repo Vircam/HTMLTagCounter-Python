@@ -1,8 +1,6 @@
 # Zafer Yılmaz -- 24.03.2022
 # An HTML tag counter
 
-import re
-
 def tagCounter():
 
     HTML_file = open("index.html", "r")
