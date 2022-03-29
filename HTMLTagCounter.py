@@ -16,9 +16,9 @@ def tagCounter():
     count = 0  # index of the current character in the HTML text
     
     for char in text:
-        if (char == "{"):  # whenever the current character is equal to "<" we will begin appending
+        if (char == "<"):  # whenever the current character is equal to "<" we will begin appending
             for a in range(count, len(text)):      
-                if (text[a + 1] == "}" or text[a + 1] == "/" or text[a + 1] == " "):  # we are checking wether the next character is going to be the end of tag's name
+                if (text[a + 1] == ">" or text[a + 1] == "/" or text[a + 1] == " "):  # we are checking wether the next character is going to be the end of tag's name
                     tags.append(tag)
                     if tag == "":  # if the tag is a closing tag it will be an empty string so we will delete from array
                         tags.pop()
